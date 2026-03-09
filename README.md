@@ -1,7 +1,6 @@
 NeoModel 3D Assets Showcase
 <img width="1921" height="993" alt="image" src="https://github.com/user-attachments/assets/0a09efea-9bd5-4697-879f-e8c05cbf957b" />
 Link: https://piyushsh11.github.io/NeoModel-3D-Assets-Showcase/
-
 Lightweight Three.js + WebGPU-ready landing page for anime-style 3D models, with live previews, cart, and checkout flows.
 
  Features
