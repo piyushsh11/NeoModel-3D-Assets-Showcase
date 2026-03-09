@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>NeoModel — Anime 3D Assets</title>
+  <meta name="theme-color" content="#0b0f1a">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/",
+        "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.js",
+        "gsap/ScrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/ScrollTrigger.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="loading">
+    <div class="glitch">
+      <span data-text="NEOMODEL">NEOMODEL</span>
+    </div>
+    <div class="progress"><div class="bar"></div></div>
+  </div>
+  <header class="nav">
+    <div class="brand">NeoModel</div>
+    <nav>
+      <a href="#products">Assets</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#specs">Tech</a>
+      <a href="cart.html">Cart</a>
+      <a href="payment.html">Checkout</a>
+    </nav>
+    <div class="cart" id="cartBtn" onclick="window.location.href='cart.html'">
+      <span class="count" id="cartCount">2</span>
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M7 4h-2l-1 2h2l3 9h9l3-8h-14"></path></svg>
+    </div>
+  </header>
+  <main>
+    <section id="hero" class="section hero">
+      <canvas id="webgl"></canvas>
+      <div class="container hero-grid">
+        <div class="hero-ui">
+          <div class="eyebrow">Realtime 3D • WebGPU-ready</div>
+          <h1><span class="neon">Anime-grade</span> assets for premium products.</h1>
+          <p>Curated, PBR-ready, rigged characters built to drop into your WebGL, Unreal, or Unity pipelines.</p>
+          <div class="cta">
+            <a href="#products" class="btn primary">Browse assets</a>
+            <a href="#features" class="btn ghost">See why</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section products">
+      <div class="container">
+        <div class="section-title"><h2>Featured Assets</h2><span class="eyebrow">Ultra clean topology</span></div>
+        <div class="grid" id="productGrid">
+          <div class="card" data-id="gojo1">
+            <div class="card-3d"></div>
+            <div class="card-content">
+              <h3>Gojo Model 1</h3>
+              <p>glTF • PBR • Rigged</p>
+              <div class="price">$29</div>
+              <div class="actions"><button class="btn small preview">Preview</button></div>
+            </div>
+          </div>
+          <div class="card" data-id="gojo2">
+            <div class="card-3d"></div>
+            <div class="card-content">
+              <h3>Gojo Model 2</h3>
+              <p>glTF • PBR • Rigged</p>
+              <div class="price">$24</div>
+              <div class="actions"><button class="btn small preview">Preview</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-title"><h2>Built for production</h2><span class="eyebrow">Performance tuned</span></div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Ready to ship</h3>
+            <p>Clean materials, animation hooks, and standard glTF packaging for instant import.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Realtime first</h3>
+            <p>Optimized mesh density, LOD friendly, mobile-safe textures, and baked lighting options.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Flexible stack</h3>
+            <p>Works in WebGL/WebGPU, Unity, Unreal, Blender—no converters required.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specs" class="section">
+      <div class="container">
+        <div class="section-title"><h2>Tech specs</h2></div>
+        <div class="spec-grid">
+          <div class="spec"><strong>4K</strong><span>Texture sets</span></div>
+          <div class="spec"><strong>FPS+</strong><span>Optimized topology</span></div>
+          <div class="spec"><strong>Rigged</strong><span>IK + FK ready</span></div>
+          <div class="spec"><strong>PBR</strong><span>Metal/Rough workflow</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing">
+      <div class="container">
+        <div class="section-title"><h2>Pricing</h2><span class="eyebrow">Simple tiers</span></div>
+        <div class="tiers">
+          <div class="tier">
+            <div class="tier-inner">
+              <h3>Creator</h3>
+              <div class="cost">$9</div>
+              <ul>
+                <li>1 model / month</li>
+                <li>Personal use</li>
+              </ul>
+              <button class="btn primary">Choose</button>
+            </div>
+          </div>
+          <div class="tier popular">
+            <div class="tier-inner">
+              <h3>Studio</h3>
+              <div class="cost">$29</div>
+              <ul>
+                <li>5 models / month</li>
+                <li>Commercial use</li>
+              </ul>
+              <button class="btn primary">Choose</button>
+            </div>
+          </div>
+          <div class="tier">
+            <div class="tier-inner">
+              <h3>Enterprise</h3>
+              <div class="cost">Custom</div>
+              <ul>
+                <li>Unlimited</li>
+                <li>Priority support</li>
+              </ul>
+              <button class="btn primary">Contact</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-title"><h2>Why NeoModel</h2></div>
+        <p style="max-width:740px;color:var(--muted)">Crafted for realtime pipelines and polished experiences. Each model is stress-tested in WebGL and WebGPU, with consistent material naming and animation-ready rigs.</p>
+      </div>
+    </section>
+  </main>
+  <div class="modal" id="previewModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="modalClose">×</button>
+      <div class="viewer">
+        <canvas id="viewerCanvas"></canvas>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="columns">
+      <div>
+        <div class="brand">NeoModel</div>
+        <p style="margin:8px 0 0;max-width:300px">Premium anime-style 3D assets for next-generation product launches.</p>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px;color:var(--txt)">Product</h4>
+        <a href="#products">Assets</a><br>
+        <a href="#pricing">Pricing</a><br>
+        <a href="#specs">Tech</a>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px;color:var(--txt)">Company</h4>
+        <a href="mailto:hello@neomodel.com">Contact</a><br>
+        <a href="cart.html">Cart</a><br>
+        <a href="payment.html">Checkout</a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

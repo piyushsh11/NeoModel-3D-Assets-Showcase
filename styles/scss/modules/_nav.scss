@@ -1,0 +1,7 @@
+.nav{position:fixed;top:0;left:0;right:0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:linear-gradient(180deg,rgba(10,14,20,.8),rgba(10,14,20,0));backdrop-filter:saturate(140%) blur(10px);z-index:20;border-bottom:1px solid var(--border)}
+.brand{font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;text-shadow:0 0 8px rgba(var(--purple),.6)}
+.nav nav a{color:var(--muted);text-decoration:none;margin:0 10px;transition:.2s}
+.nav nav a:hover{color:#fff}
+.cart{display:flex;gap:8px;align-items:center;cursor:pointer;position:relative}
+.cart svg{stroke:#fff;fill:none;stroke-width:2}
+.cart .count{position:absolute;top:-8px;right:-8px;background:linear-gradient(90deg,#b16cff,#00f0ff);color:#000;font-size:10px;border-radius:10px;padding:2px 6px}

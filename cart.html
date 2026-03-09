@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NeoModel — Cart</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">NeoModel</div>
+    <nav>
+      <a href="index.html#products">Assets</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#specs">Tech</a>
+      <a href="cart.html">Cart</a>
+      <a href="payment.html">Checkout</a>
+    </nav>
+    <div class="cart">
+      <span class="count">2</span>
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M7 4h-2l-1 2h2l3 9h9l3-8h-14"></path></svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:120px">
+      <div class="container">
+        <div class="section-title"><h1 style="margin:0">Your cart</h1><span class="eyebrow">Ready to checkout</span></div>
+        <p style="color:var(--muted);margin:0 0 28px">Review assets before you check out.</p>
+        <div class="grid" style="grid-template-columns:2fr 1fr;gap:28px">
+          <div>
+            <div class="card" style="margin-bottom:16px">
+              <div class="card-3d"></div>
+              <div class="card-content" style="display:flex;align-items:center;justify-content:space-between">
+                <div>
+                  <h3 style="margin:0 0 4px">Gojo Model 1</h3>
+                  <p style="margin:0;color:var(--muted)">glTF • PBR • Rigged</p>
+                </div>
+                <div class="price">$29</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-3d"></div>
+              <div class="card-content" style="display:flex;align-items:center;justify-content:space-between">
+                <div>
+                  <h3 style="margin:0 0 4px">Gojo Model 2</h3>
+                  <p style="margin:0;color:var(--muted)">glTF • PBR • Rigged</p>
+                </div>
+                <div class="price">$24</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="form-card">
+              <div class="section-title" style="margin:0 0 8px"><h3 style="margin:0">Order summary</h3></div>
+              <div class="form-row"><span>Subtotal</span><strong>$53</strong></div>
+              <div class="form-row"><span>Platform fee</span><strong>$2</strong></div>
+              <div class="form-row" style="border-top:1px solid var(--border);padding-top:12px;margin-top:12px"><span>Total</span><strong>$55</strong></div>
+              <div style="margin-top:18px;display:flex;gap:10px;flex-direction:column">
+                <a class="btn primary" href="payment.html">Proceed to payment</a>
+                <a class="btn ghost" href="index.html#products">Continue shopping</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="columns">
+      <div>
+        <div class="brand">NeoModel</div>
+        <p style="margin:8px 0 0;max-width:300px">Premium anime-style 3D assets for next-generation product launches.</p>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px;color:var(--txt)">Product</h4>
+        <a href="index.html#products">Assets</a><br>
+        <a href="index.html#pricing">Pricing</a><br>
+        <a href="index.html#specs">Tech</a>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px;color:var(--txt)">Company</h4>
+        <a href="mailto:hello@neomodel.com">Contact</a><br>
+        <a href="cart.html">Cart</a><br>
+        <a href="payment.html">Checkout</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

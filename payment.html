@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NeoModel — Payment</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">NeoModel</div>
+    <nav>
+      <a href="index.html#products">Assets</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#specs">Tech</a>
+      <a href="cart.html">Cart</a>
+      <a href="payment.html">Checkout</a>
+    </nav>
+    <div class="cart">
+      <span class="count">2</span>
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M7 4h-2l-1 2h2l3 9h9l3-8h-14"></path></svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:120px">
+      <div class="container">
+        <div class="section-title"><h1 style="margin:0">Checkout</h1><span class="eyebrow">Secure payment</span></div>
+        <p style="color:var(--muted);margin:0 0 28px">Finalize your order with encrypted processing.</p>
+        <div class="grid" style="grid-template-columns:2fr 1fr;gap:28px">
+          <div class="form-card">
+            <div class="pill">Payment details</div>
+            <div class="form-grid" style="margin-top:14px">
+              <div class="form-group">
+                <label for="name">Full name</label>
+                <input id="name" type="text" placeholder="Gojo Satoru" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="card">Card number</label>
+              <input id="card" inputmode="numeric" placeholder="4242 4242 4242 4242" />
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="exp">Expiry</label>
+                <input id="exp" placeholder="MM / YY" />
+              </div>
+              <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input id="cvc" placeholder="123" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country">
+                <option>United States</option>
+                <option>Canada</option>
+                <option>United Kingdom</option>
+                <option>Japan</option>
+              </select>
+            </div>
+            <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+              <a class="btn primary" href="#">Pay $55</a>
+              <a class="btn ghost" href="cart.html">Back to cart</a>
+            </div>
+          </div>
+          <div class="form-card">
+            <div class="pill">Order summary</div>
+            <div class="form-row" style="margin-top:12px">
+              <span>Gojo Model 1</span><strong>$29</strong>
+            </div>
+            <div class="form-row">
+              <span>Gojo Model 2</span><strong>$24</strong>
+            </div>
+            <div class="form-row">
+              <span>Platform fee</span><strong>$2</strong>
+            </div>
+            <div class="form-row" style="border-top:1px solid var(--border);padding-top:12px;margin-top:12px">
+              <span>Total</span><strong>$55</strong>
+            </div>
+            <div style="margin-top:14px;color:var(--muted);font-size:13px">
+              Securely processed with industry-standard encryption.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="columns">
+      <div>
+        <div class="brand">NeoModel</div>
+        <p style="margin:8px 0 0;max-width:300px">Premium anime-style 3D assets for next-generation product launches.</p>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px;color:var(--txt)">Product</h4>
+        <a href="index.html#products">Assets</a><br>
+        <a href="index.html#pricing">Pricing</a><br>
+        <a href="index.html#specs">Tech</a>
+      </div>
+      <div>
+        <h4 style="margin:0 0 8px;color:var(--txt)">Company</h4>
+        <a href="mailto:hello@neomodel.com">Contact</a><br>
+        <a href="cart.html">Cart</a><br>
+        <a href="payment.html">Checkout</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

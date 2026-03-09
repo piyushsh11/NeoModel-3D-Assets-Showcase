@@ -1,0 +1,17 @@
+@use "sass:color";
+$bg:#0a0e14;
+$panel:rgba(16,22,33,.5);
+$border:rgba(255,255,255,.08);
+$glass:rgba(24,32,48,.35);
+$neon1:#b16cff;
+$neon2:#00f0ff;
+$neon3:#ff5fb3;
+$txt:#e6ecff;
+$muted:#9aa3b2;
+:root{--bg:#0a0e14;--panel:#{$panel};--border:#{$border};--glass:#{$glass};--neon1:#{$neon1};--neon2:#{$neon2};--neon3:#{$neon3};--txt:#{$txt};--muted:#{$muted};--cyan:0,240,255;--purple:177,108,255;--pink:255,95,179}
+@import "./modules/reset";
+@import "./modules/nav";
+@import "./modules/sections";
+@import "./modules/cards";
+@import "./modules/modal";
+@import "./modules/loading";
