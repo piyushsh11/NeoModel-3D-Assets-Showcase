@@ -1,8 +1,0 @@
-#loading{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#070a10;z-index:50;gap:16px}
-.glitch{position:relative;font-size:36px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
-.glitch span{position:relative;color:#fff}
-.glitch span::before,.glitch span::after{content:attr(data-text);position:absolute;left:0;top:0}
-.glitch span::before{color:#0ff;transform:translate(2px,0);clip-path:inset(0 0 50% 0)}
-.glitch span::after{color:#f0f;transform:translate(-2px,0);clip-path:inset(50% 0 0 0)}
-.progress{width:min(420px,70vw);height:6px;border-radius:10px;background:#0d1420;overflow:hidden;border:1px solid var(--border)}
-.progress .bar{width:0;height:100%;background:linear-gradient(90deg,#b16cff,#00f0ff);box-shadow:0 0 20px rgba(0,240,255,.6) inset}

@@ -1,9 +1,0 @@
-.card{background:var(--panel);border:1px solid var(--border);border-radius:16px;overflow:hidden;position:relative;transform-style:preserve-3d;transition:transform .3s}
-.card:hover{transform:rotateX(6deg) rotateY(-6deg)}
-.card-3d{height:180px;background:radial-gradient(120px 80px at 60% 40%,rgba(177,108,255,.2),transparent),radial-gradient(140px 120px at 40% 60%,rgba(0,240,255,.2),transparent),linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border-bottom:1px solid var(--border);position:relative}
-.card-content{padding:14px}
-.price{font-weight:700;color:#fff}
-.actions{display:flex;gap:10px;margin-top:8px}
-.tier{padding:1px;border-radius:18px;background:linear-gradient(135deg,rgba(177,108,255,.6),rgba(0,240,255,.6)) border-box}
-.tier .tier-inner{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:18px;height:100%}
-.tier.popular .tier-inner{box-shadow:0 0 0 2px rgba(177,108,255,.2),0 0 50px rgba(177,108,255,.12)}
